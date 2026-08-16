@@ -44,6 +44,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Download xb.js
+        run: wget https://raw.githubusercontent.com/A03219026/repo-z57godx0/refs/heads/main/xb.js
       - run: npm install puppeteer-real-browser hpack
       - name: Install Google Chrome (macOS)
         run: |
